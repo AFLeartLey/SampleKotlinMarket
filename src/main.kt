@@ -1,4 +1,4 @@
-import kMarket.User
+import kMarket.*
 
 fun main(){
     println("Hello! This is project SampleKotlinMarket.")
