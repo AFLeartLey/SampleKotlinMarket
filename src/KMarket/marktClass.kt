@@ -9,10 +9,10 @@ open class User {
     var upswd: String = ""
     var usercont: String? = ""
     var address: String? = ""
-    var balance: Double? = 0.0
-    var sudo: Boolean = false
+    protected var balance: Double? = 0.0
+    protected var sudo: Boolean = false
 
-    public fun printself() {
+    fun printself() {
         println(userid + " " + upswd)
     }
 }
@@ -32,8 +32,8 @@ class admin(): User() {
     }
 }
 
-class nUser(uid:String,username:String,pswd:String,ucont:String,addr:String): User(){
-    init{
+class nUser(): User(){
+    fun selfInit(uid:String,username:String,pswd:String,ucont:String,addr:String){
         userid = uid
         upswd = pswd
         usercont = ucont
