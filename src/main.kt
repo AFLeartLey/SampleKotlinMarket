@@ -1,11 +1,13 @@
-import kMarket.data.Admin
-import kMarket.data.NormalUser
+import kMarket.data.Operations.UserRead
+import kMarket.data.User.Administrator
+import kMarket.data.User.*
+import java.io.File
 
 fun main(){
     println("Hello! This is project SampleKotlinMarket.")
     println("The project is waiting for your participation!")
-    var newAdmin: Admin = Admin()
-    var newUser: NormalUser = NormalUser("u1d","u1d","lkjahsdfkljhasdf","lkjhasdfjkhasdf","afdkgljhasdfgjklh")
-    newUser.printself();
+    var newAdmin: Administrator = Administrator()
+    val newUser = UserRead()
+    newUser.printself()
     return
 }
