@@ -15,3 +15,14 @@ public fun UserRead(): InnerUser{
     return ret
 }
 
+public fun ReadUserData(): Array<InnerUser> {
+    var ret: Array<InnerUser>;
+    try{
+        val nReadUser:InnerUser = UserRead()
+    }
+    return ret
+}
+
+//to do:
+//change user read into user array
+//do userdata writing
