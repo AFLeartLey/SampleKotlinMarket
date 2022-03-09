@@ -1,4 +1,4 @@
-package kMarket.Item
+package kMarket.data.Item
 
 class Item(val iid:String,val iname:String,val iprice:Double,val descr:String,val sid:String,val utime:String,status: Int){
     init{
