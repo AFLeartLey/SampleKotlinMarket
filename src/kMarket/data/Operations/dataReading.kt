@@ -28,6 +28,15 @@ public fun readUserData(): Array<InnerUser> {
     }
 }
 
-//to do:
-//change user read into user array
-//do userdata writing
+/**
+ * WARNING: this function may make userdata empty--use carefully.
+ * @param inp array of userdata being written to the userfile.
+ */
+public fun writeUserData(inp:Array<InnerUser>){
+    val userFile = File(".\\Userdata\\User.txt")
+    val DOS = DataOutputStream(FileOutputStream(userFile))
+    val w = BufferedWriter(OutputStreamWriter(DOS))
+    for(u in inp){
+        //to do: clear original file and write updated data
+    }
+}
